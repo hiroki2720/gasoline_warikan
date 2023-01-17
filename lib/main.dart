@@ -310,7 +310,7 @@ class _MyHomePageState extends State<MyHomePage> {
             children: [
               const Text("合計金額は"),
               Text(
-                "$sum円！",
+                "$sum円",
                 style: const TextStyle(
                   color: Colors.red,
                   fontWeight: FontWeight.bold,
@@ -383,7 +383,7 @@ class _MyHomePageState extends State<MyHomePage> {
             children: [
               const Text("一人あたり"),
               Text(
-                "$costOne円！",
+                "$costOne円",
                 style: const TextStyle(
                   color: Colors.red,
                   fontWeight: FontWeight.bold,
