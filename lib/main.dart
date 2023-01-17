@@ -60,12 +60,13 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
         title: Text(widget.title, style: const TextStyle(color: Colors.white)),
       ),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
             CalculationFuel(),
             display(costSum),
@@ -82,7 +83,7 @@ class _MyHomePageState extends State<MyHomePage> {
       margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
       padding: const EdgeInsets.fromLTRB(5, 20, 5, 20),
       width: screenSize.width * 1,
-      height: screenSize.height * 0.4,
+      //height: screenSize.height * 0.27,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         color: const Color.fromARGB(255, 219, 219, 218),
@@ -98,7 +99,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   SizedBox(
-                    width: 200,
+                    width: screenSize.width*0.35,
                     child: TextField(
                       decoration: const InputDecoration(
                         icon: Icon(Icons.drive_eta, color: Colors.black,),
@@ -131,7 +132,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   SizedBox(
-                    width: 200,
+                    width: screenSize.width*0.35,
                     child: TextField(
                       decoration: const InputDecoration(
                         icon: Icon(Icons.ev_station, color: Colors.black,),
@@ -164,7 +165,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   SizedBox(
-                    width: 200,
+                    width: screenSize.width*0.35,
                     child: TextField(
                       decoration: const InputDecoration(
                         icon: Icon(Icons.directions_run, color: Colors.black,),
@@ -196,12 +197,12 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           ),
           Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Row(
                 children: [
                   SizedBox(
-                    width: 200,
+                    width: screenSize.width*0.35,
                     child: TextField(
                       decoration: const InputDecoration(
                         icon: Icon(Icons.signpost, color: Colors.black,),
@@ -233,7 +234,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Row(
                 children: [
                   SizedBox(
-                    width: 200,
+                    width: screenSize.width*0.35,
                     child: TextField(
                       decoration: const InputDecoration(
                         icon: Icon(Icons.outlet_sharp, color: Colors.black,),
@@ -259,9 +260,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   )
                 ],
               ),
-              const SizedBox(
-                height: 5,
-              ),
             ],
           )
         ],
@@ -273,8 +271,9 @@ class _MyHomePageState extends State<MyHomePage> {
     var screenSize = MediaQuery.of(context).size;
     return Container(
       width: screenSize.width * 1,
-      height: screenSize.height * 0.2,
+      //height: screenSize.height * 0.2,
       margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
+      padding: const EdgeInsets.fromLTRB(10, 20, 10, 20),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         color: const Color.fromARGB(255, 219, 219, 218),
@@ -315,8 +314,9 @@ class _MyHomePageState extends State<MyHomePage> {
     var screenSize = MediaQuery.of(context).size;
     return Container(
       width: screenSize.width * 1,
-      height: screenSize.height * 0.2,
+      //height: screenSize.height * 0.2,
       margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
+      padding: const EdgeInsets.fromLTRB(10, 20, 10, 20),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         color: const Color.fromARGB(255, 219, 219, 218),
