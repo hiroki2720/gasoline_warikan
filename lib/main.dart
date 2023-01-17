@@ -322,7 +322,7 @@ class _MyHomePageState extends State<MyHomePage> {
         color: const Color.fromARGB(255, 219, 219, 218),
       ),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           
           Column(
