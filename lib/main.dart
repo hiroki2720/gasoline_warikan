@@ -58,7 +58,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    
     return Scaffold(
       resizeToAvoidBottomInset: false,
       appBar: AppBar(
@@ -88,7 +87,7 @@ class _MyHomePageState extends State<MyHomePage> {
         borderRadius: BorderRadius.circular(20),
         color: const Color.fromARGB(255, 219, 219, 218),
       ),
-      
+
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
@@ -99,10 +98,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   SizedBox(
-                    width: screenSize.width*0.35,
+                    width: screenSize.width * 0.35,
                     child: TextField(
                       decoration: const InputDecoration(
-                        icon: Icon(Icons.drive_eta, color: Colors.black,),
+                        icon: Icon(
+                          Icons.drive_eta,
+                          color: Colors.black,
+                        ),
                         labelText: "燃費",
                         hintText: "16.3",
                         enabledBorder: OutlineInputBorder(
@@ -132,10 +134,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   SizedBox(
-                    width: screenSize.width*0.35,
+                    width: screenSize.width * 0.35,
                     child: TextField(
                       decoration: const InputDecoration(
-                        icon: Icon(Icons.ev_station, color: Colors.black,),
+                        icon: Icon(
+                          Icons.ev_station,
+                          color: Colors.black,
+                        ),
                         labelText: "ガソリン代",
                         hintText: "155",
                         enabledBorder: OutlineInputBorder(
@@ -165,10 +170,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   SizedBox(
-                    width: screenSize.width*0.35,
+                    width: screenSize.width * 0.35,
                     child: TextField(
                       decoration: const InputDecoration(
-                        icon: Icon(Icons.directions_run, color: Colors.black,),
+                        icon: Icon(
+                          Icons.directions_run,
+                          color: Colors.black,
+                        ),
                         labelText: "走行距離",
                         hintText: "25",
                         enabledBorder: OutlineInputBorder(
@@ -202,10 +210,13 @@ class _MyHomePageState extends State<MyHomePage> {
               Row(
                 children: [
                   SizedBox(
-                    width: screenSize.width*0.35,
+                    width: screenSize.width * 0.35,
                     child: TextField(
                       decoration: const InputDecoration(
-                        icon: Icon(Icons.signpost, color: Colors.black,),
+                        icon: Icon(
+                          Icons.signpost,
+                          color: Colors.black,
+                        ),
                         labelText: "高速道路",
                         hintText: "2500",
                         enabledBorder: OutlineInputBorder(
@@ -234,10 +245,13 @@ class _MyHomePageState extends State<MyHomePage> {
               Row(
                 children: [
                   SizedBox(
-                    width: screenSize.width*0.35,
+                    width: screenSize.width * 0.35,
                     child: TextField(
                       decoration: const InputDecoration(
-                        icon: Icon(Icons.outlet_sharp, color: Colors.black,),
+                        icon: Icon(
+                          Icons.outlet_sharp,
+                          color: Colors.black,
+                        ),
                         labelText: "その他",
                         hintText: "500",
                         enabledBorder: OutlineInputBorder(
@@ -324,21 +338,20 @@ class _MyHomePageState extends State<MyHomePage> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          
           Column(
             children: [
               const Text(
-            "人数",
-            style: TextStyle(fontSize: 20),
-          ),
+                "人数",
+                style: TextStyle(fontSize: 20),
+              ),
               DecoratedBox(
-                decoration:  BoxDecoration(
+                decoration: BoxDecoration(
                   color: const Color.fromARGB(255, 32, 31, 31),
-                  border: Border.all(color: Colors.black38, width:3),
-                  borderRadius: BorderRadius.circular(50), // 
+                  border: Border.all(color: Colors.black38, width: 3),
+                  borderRadius: BorderRadius.circular(50), //
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.only(left:30, right: 30),
+                  padding: const EdgeInsets.only(left: 30, right: 30),
                   child: DropdownButton(
                     value: peopleNum,
                     items: const [
@@ -356,18 +369,15 @@ class _MyHomePageState extends State<MyHomePage> {
                         costOne = calcOne(peopleNum, costSum);
                       });
                     },
-              //       isExpanded: true,
-              //       underline: Container(),
-                     style: TextStyle(fontSize: 18, color: Colors.white),
-               dropdownColor: Colors.black,
-               iconEnabledColor: Colors.white, 
+                    //       isExpanded: true,
+                    //       underline: Container(),
+                    style: const TextStyle(fontSize: 18, color: Colors.white),
+                    dropdownColor: Colors.black,
+                    iconEnabledColor: Colors.white,
                   ),
                 ),
               ),
             ],
-          ),
-          const SizedBox(
-            width: 80,
           ),
           Column(
             children: [
