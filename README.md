@@ -1,16 +1,14 @@
-# etd
+# ガソリン代割り勘アプリ
 
-A new Flutter project.
+簡単な計算アプリ。
 
-## Getting Started
+燃費などを入力すると、一人当たりのガソリン代を出力してくれる。
 
-This project is a starting point for a Flutter application.
+Flutterで開発した。
 
-A few resources to get you started if this is your first Flutter project:
+## 使い方
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+以下のURLをブラウザで開くと使える
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+https://gasoline-warikan.web.app/#/　
+
