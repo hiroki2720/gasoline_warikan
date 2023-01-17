@@ -58,6 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title, style: const TextStyle(color: Colors.white)),
@@ -76,13 +77,17 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Widget CalculationFuel() {
+    var screenSize = MediaQuery.of(context).size;
     return Container(
+      margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
+      padding: const EdgeInsets.fromLTRB(5, 20, 5, 20),
+      width: screenSize.width * 1,
+      height: screenSize.height * 0.4,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         color: const Color.fromARGB(255, 219, 219, 218),
       ),
-      margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
-      padding: const EdgeInsets.fromLTRB(5, 20, 5, 20),
+      
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
@@ -96,7 +101,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     width: 200,
                     child: TextField(
                       decoration: const InputDecoration(
-                        icon: Icon(Icons.drive_eta),
+                        icon: Icon(Icons.drive_eta, color: Colors.black,),
                         labelText: "燃費",
                         hintText: "16.3",
                         enabledBorder: OutlineInputBorder(
@@ -129,7 +134,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     width: 200,
                     child: TextField(
                       decoration: const InputDecoration(
-                        icon: Icon(Icons.ev_station),
+                        icon: Icon(Icons.ev_station, color: Colors.black,),
                         labelText: "ガソリン代",
                         hintText: "155",
                         enabledBorder: OutlineInputBorder(
@@ -162,7 +167,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     width: 200,
                     child: TextField(
                       decoration: const InputDecoration(
-                        icon: Icon(Icons.directions_run),
+                        icon: Icon(Icons.directions_run, color: Colors.black,),
                         labelText: "走行距離",
                         hintText: "25",
                         enabledBorder: OutlineInputBorder(
@@ -199,7 +204,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     width: 200,
                     child: TextField(
                       decoration: const InputDecoration(
-                        icon: Icon(Icons.signpost),
+                        icon: Icon(Icons.signpost, color: Colors.black,),
                         labelText: "高速道路",
                         hintText: "2500",
                         enabledBorder: OutlineInputBorder(
@@ -231,7 +236,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     width: 200,
                     child: TextField(
                       decoration: const InputDecoration(
-                        icon: Icon(Icons.outlet_sharp),
+                        icon: Icon(Icons.outlet_sharp, color: Colors.black,),
                         labelText: "その他",
                         hintText: "500",
                         enabledBorder: OutlineInputBorder(
@@ -265,7 +270,10 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Widget display(int sum) {
+    var screenSize = MediaQuery.of(context).size;
     return Container(
+      width: screenSize.width * 1,
+      height: screenSize.height * 0.2,
       margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
@@ -304,7 +312,10 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Widget people() {
+    var screenSize = MediaQuery.of(context).size;
     return Container(
+      width: screenSize.width * 1,
+      height: screenSize.height * 0.2,
       margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
