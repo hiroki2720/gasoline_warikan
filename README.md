@@ -12,3 +12,5 @@ Flutterで開発した。
 
 https://gasoline-warikan.web.app/#/　
 
+
+<img src="https://user-images.githubusercontent.com/80376878/218257362-6bfcbfb2-0da1-470c-ab82-dea6b236102b.PNG" width = "400">
